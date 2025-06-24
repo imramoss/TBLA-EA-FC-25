@@ -1,3 +1,81 @@
+// Substituir dados antigos no localStorage
+const novosDados = [
+  {
+    time: "André",
+    pontos: 0,
+    jogos: 0,
+    vitorias: 0,
+    empates: 0,
+    derrotas: 0,
+    golsPro: 0,
+    golsContra: 0,
+    amarelos: 0,
+    vermelhos: 0
+  },
+  {
+    time: "Davizão",
+    pontos: 0,
+    jogos: 0,
+    vitorias: 0,
+    empates: 0,
+    derrotas: 0,
+    golsPro: 0,
+    golsContra: 0,
+    amarelos: 0,
+    vermelhos: 0
+  },
+  {
+    time: "Gabriel",
+    pontos: 0,
+    jogos: 0,
+    vitorias: 0,
+    empates: 0,
+    derrotas: 0,
+    golsPro: 0,
+    golsContra: 0,
+    amarelos: 0,
+    vermelhos: 0
+  },
+  {
+    time: "Jão",
+    pontos: 0,
+    jogos: 0,
+    vitorias: 0,
+    empates: 0,
+    derrotas: 0,
+    golsPro: 0,
+    golsContra: 0,
+    amarelos: 0,
+    vermelhos: 0
+  },
+  {
+    time: "Haaland Moreno",
+    pontos: 0,
+    jogos: 0,
+    vitorias: 0,
+    empates: 0,
+    derrotas: 0,
+    golsPro: 0,
+    golsContra: 0,
+    amarelos: 0,
+    vermelhos: 0
+  },
+  {
+    time: "Samuel",
+    pontos: 0,
+    jogos: 0,
+    vitorias: 0,
+    empates: 0,
+    derrotas: 0,
+    golsPro: 0,
+    golsContra: 0,
+    amarelos: 0,
+    vermelhos: 0
+  }
+];
+
+localStorage.setItem("tabelaFifa", JSON.stringify(novosDados));
+
 function popularDadosIniciais() {
   if (!localStorage.getItem("tabelaFifa")) {
     const dadosIniciais = [
